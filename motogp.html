@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>Made By Shane</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MotoGP Clock & Calendar</b></h1>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+
+<!-- Blog entries -->
+<div class="w3-col 18 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/motogpclock.jpg" alt="calendar" style="width:100%">
+    <div class="w3-container">
+      <h3><b>MotoGP Clock</b></h3>
+      <h5>Clock & Calendar for the next race, <span class="w3-opacity">4 Feb, 2020</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>The only sport I'm really into these days is bike racing, and Motogp is the pinacle of the sport. I built a clock / calendar to display the countdown to the next race meeting (and also the local time) 
+	  for my work desk. It's also a bit of a conversation starter.</p>
+	  <p><h3>Description</h3></p>
+	  The clock alternates between the current time and displaying the next race / session (WUP / FP1/2/3 / Qualifying and the Race itself). When I originally coded the calendar, I hard coded the calendar into
+	  memory (having previously scraped it from the motogp.com website using python) but alas, the rona turned the season on its head. So, I changed the code to periodically poll my phone to scrape the site for 
+	  the next session and get an accurate time to set the RTC (in case it has drifted).<br>
+	  The plan is to turn the hotspot on after a race so that the MCU can scrape the next race (and sessions). The reason for this is that the motogp calendar is still 'evolving' as the year and the rona rolls on. 
+	  I will change the code for 2021, assuming that the calendar is going to be normal then.
+	  <p>My design uses 2 LED matrix displays daisy chained, a DS3231 RTC for keeping the time (useful for the clock function and also calculating the time until the next session and controlled by a 
+	  NodeMCU all in a delicious in a custom 3D printed case.<br>
+	  <p><h3>Code / firmware</h3></p>
+	  Coding is Arduino and performs all of the functions except timekeeping (which is handled by the RTC). <br>
+	  The code is available <a href="https://github.com/beerbotboffin/MotogpCalendar" target="_blank">here</a>.
+	  <p><h3>Hardware</h3></p>
+	  There's no PCB in this project, all wiring is handled with point to point using dupont connectors.<br>
+	  There's not much to this project, but if you're shopping for the items, here's the list<br>
+	  <a href="https://www.ebay.com.au/itm/MAX7219-Dot-led-matrix-MCU-control-LED-Display-module-for-Arduino-Raspberry-Pi-F/232811396034?hash=item3634a3fbc2:g:m8cAAOSwb39bKLRs" target="_blank">
+	  MAX7219 Dot led matrix MCU control LED Display module for Arduino Raspberry Pi F </a> <i>ebay link</i><br>
+	  <a href="https://www.ebay.com.au/itm/ESP-32-ESP32S-Development-Board-2-4GHz-WiFi-Bluetooth-Antenna-CP2102-Module-AU/124229275402?epid=14031744997&hash=item1ceca44f0a:g:snoAAOSwD6Fe7XeI" target="_blank">
+	  ESP-32 ESP32S Development Board 2.4GHz WiFi+Bluetooth Antenna CP2102 Module AU </a> <i>ebay link</i><br>
+	  <a href="https://www.ebay.com.au/itm/RTC-I2C-Module-DS1307-AT24C32-Time-Clock-AVR-ARM-PIC-SMD-Arduino/273708188022?hash=item3fba478176:g:6MEAAOSw02Fcb6GW&frcectupt=true" target="_blank">
+	  RTC I2C Module DS1307 AT24C32 Time Clock AVR ARM PIC SMD - Arduino </a> <i>ebay link</i><br>
+	  
+	  
+	  </p>
+      <div class="w3-row">
+
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+  
+  
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+	<!-- 
+  <!button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <!button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  -->
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  
+</footer>
+
+</body>
+</html>

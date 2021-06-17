@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>Made By Shane</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Riden Power Supply</b></h1>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+
+<!-- Blog entries -->
+<div class="w3-col 18 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/powersupply.jpg" alt="calendar" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Riden RD6006W Power Supply</b></h3>
+      <h5>It's nice<span class="w3-opacity">8 Jul, 2020</span></h5>
+    </div>
+
+    <div class="w3-container">
+		<p>Do I need a new power supply? Well, sort of not really. I have a common, garden variety Chinese 5A bench power supply, but there's a few things I don't like about it.</p>
+		<p>First up, it's a brick - it weighs a tonne. Secondly, it's a bitch to adjust the voltage due to the display lag - it's <i>waaaaaay</i> too slow to update the display. Lastly, it's too deep - 
+		it takes up too much real estate on the desk.</p>
+		<p>Now, there's a bare power module from Mao's Dollarama that looks nice - it's compact, programmable and has a nice display. It's like a poor mans commercial supply.</p>
+		<p>Now, it doesn't come with a transformer / power supply itself, but I do have an old power supply(very similar to the current one but with duff electronics) so I'm re-tasking the
+		transformer from it. What I decided on was to mount the transformer in a seperate case which lives on the floor so that it's not taking up real estate on the desk / bench. I've designed 
+		the cases in openscad and the files are available here on github. I printed them in eSun white PLA and think they're come up a treat. I quite like the air vents in the transformer case which
+		as you can see from the photos are slotted and match the curve of the case. The bench case took a couple of more goes to get 'just right' - but I think it came up alright. The case is designed
+		to fit with the soldering iron (the 'l' in solder is not silent, BTW) and the hot air reflow tool so that only minimal bench space is used.	</p>
+		<p>Getting the 3D printed case just right has taken a little longer than planned, but after a few revisions, I now have a mount for using a Makita LXT battery and switching between that and
+		the transformer. This will allow me to use the power supply in a mobile mode (such as when trying to learn to fly my R/C aircraft or camping for some reason).
+		</p>
+		<p><b>UPDATE <i>2 Aug 2020</b></i> All of the work I can do for the moment, currently waiting on sheet brass to arrive from China which I need to make the electrodes for the battery contacts.</p>
+		<p><b>UPDATE <i>5 Aug 2020</b></i> After realising I had a bit of a 'seniors moment', it occurred to me that I already have a bench supply that I can use to supply the new supply to actually 
+		to test the new supply. Jeez, this getting old sucks. But we got there in the end, hey? I'm currently having a couple of wee drams of the delicious Drambuie, but the plan is to cack-up (old Army
+		expression) a test cable - banana plugs to XT-60. Hmmm, I guess this means that the supply is now a 4 mode supply. I can (will be able to) power it via any of the following methods:
+		<ul>
+		<li>The new transformer I made <i>or</i></li>
+		<li>a Makita LXT 18v LiPo battery <i>or</i></li>
+		<li>the old bench supply <i>or</i></li>
+		<li>the big arse 6000mAh LiPo battery I have.</li>
+		</ul>
+		Nice.</p>
+
+		
+      <div class="w3-row">
+
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+  
+  
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+	<!-- 
+  <!button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <!button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  -->
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  
+</footer>
+
+</body>
+</html>

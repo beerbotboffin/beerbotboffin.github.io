@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title>Made By Shane</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Wifi Controlled Magnetic Stirrer</b></h1>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+
+<!-- Blog entries -->
+<div class="w3-col 18 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/magnetic_stirrer.jpg" alt="calendar" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Wifi Controlled Magnetic Stirrer</b></h3>
+      <h5>With heater and Wifi!, <span class="w3-opacity">8 Jul, 2020</span></h5>
+    </div>
+
+    <div class="w3-container">
+		<p>I sometimes make my printed circuit boards and need a way to Tin plate them.</p>
+		<p>I've a got a recipe, but need a way to heat & mix the solutions - what I need is known as a magnetic stirrer. They exist, and not overly expensive from 
+		the usual places in Mao's Dollarama (© AvE). But I wanted to make my own.</p>
+		<p>I started by buying a 40W Silicone heater pad, 100mm dia Aluminium (yes, Aluminium), stirrer bars, beaker and an OLED display from ebay. I have a bunch of NodeMCU's in stock, so 
+		they weren't an issue.<br>
+		Next up was designing an enclosure to 3D print. I'll upload the files to shittyverse when it's done.<br>
+		I've been prototyping the firmware and learning KiCAD to design a PCB to mount the electronics. When the PCB design is finished, I'll either mill it on the small
+		CNC or chemically etch the board. How do I plate it? Good question...</p>
+		<p>Yes, I know could just order the PCBs from somewhere like JLCPCB, but given that I'm an amateur electronics designer I often get it wrong and need to iterate. With
+		the CNC mill I can (will) prototype and iterate a board in hours, not weeks.<p>
+		<p>Now, you won't see it until I make some more progress and post photos, but one of the design parameters is to keep it compact. Thus I decided on no externals controls 
+		(no switches, pots etc) and control the heating and RPM with a web interface via Wifi.</p>
+
+		<p><i>Stay tuned for more updates</i></p>
+		
+      <div class="w3-row">
+
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+  
+  
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+	<!-- 
+  <!button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <!button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  -->
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  
+</footer>
+
+</body>
+</html>

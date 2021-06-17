@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<title>Made By Shane</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Cat Feeder</b></h1>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+
+<!-- Blog entries -->
+<div class="w3-col 18 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/catfeeder.png" alt="calendar" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Cat Feeder</b></h3>
+      <h5>A project to be able to feed my cat Max when I'm away or busy, <span class="w3-opacity">17 Jun, 2021</span></h5>
+    </div>
+
+    <div class="w3-container">
+		<p>I have a little mate who's good for company, but like most cats gets unhappy if he's not fed on time, every single time.</p>
+		<p>What's a pain is that as I live alone I can't really go anywhere overnight as I have a ravenous little mouth to feed. Or if I'm in the office I come to home cries of 'Where have you been? I'm STARVING TO DEATH HERE!!!'. </p>
+		<p>Looking to solve both problems, I've been working on a feeder system where I can pre-load small cans of cat food into a machine and have it dispense said wet food either on a scheduled basis or controlled remotely. The system involves a gravity fed can feeder which dispenses cans to a robot arm which is then used to place the can in the can rotator, then move the can to the can opener, then dispense the contents of the can into the cat bowl and finally place the can in a waste bin. Why so complex? Well, I'm trying to find a second cat to keep Max happy and so will need to dispense 2 cans at the same time. This system will allow for custom menus for either cat. Not that cats are fussy, <i>not at all</i></p>	
+		<p>So far, I have added a bot channel to Telegram and a bot controller in NodeRed. This allows me to a). send commands to the cat feeder and b). get a video back showing that the process has indeed worked and that said cat(s) is happy and fed. I can also just get a video of the general situation to check on the general state of things, from anywhere in the world!<p>
+		
+		<p>Still To Be Done</p>
+		<ul>
+		<li>Finish mechanical design.</li>
+		<li>Integrate NodeMCU controller with steppers.</li>
+		<li>Find the final part needed for the robot arm.</li>
+		</ul>
+		<p><i>Stay tuned for more updates</i></p>
+		
+      <div class="w3-row">
+
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+  
+  
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+	<!-- 
+  <!button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <!button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  -->
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  
+</footer>
+
+</body>
+</html>

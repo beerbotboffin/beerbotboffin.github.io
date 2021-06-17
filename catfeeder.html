@@ -46,6 +46,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 		<li>Find the final part needed for the robot arm.</li>
 		</ul>
 		<p><i>Stay tuned for more updates</i></p>
+		<p><b>Update</b> 17 Jun 2021. As I said above, I have the NodeRed side of the controller working and have been working on the NodeMCU stepper controller this afternoon. Well, despite using the highest quality stepper motor (found it all corroded in the bottom of a box) and a second-hand A4988 stepper driver, could not get it to work. NodeRed is sending the message to the MQTT broker, the NodeMCU is receiving the message from the broker and it's generating the correct pulses (as confirmed by the oscilloscope), but no movement. So, I threw the scope probe over the outputs to the motor - nothing. Try the other pair - nothing. Hmmmm. Maybe I have the RESET pin not hooked up? Nope, that's fine. Let's check the power supply. And poof, sizzle, smoke. Let the magic smoke out of the A4988. Lucky it was a cheap Chinese one. But I now have to locate a replacement, so if updates take a bit, that will be why.</p>
 		
       <div class="w3-row">
 
